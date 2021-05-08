@@ -1,0 +1,10 @@
+﻿@model Models.EF.About
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="all-comments" style="font-size:20px;text-align:center;">
+    @Html.Raw(Model.Description)
+</div>
+ 

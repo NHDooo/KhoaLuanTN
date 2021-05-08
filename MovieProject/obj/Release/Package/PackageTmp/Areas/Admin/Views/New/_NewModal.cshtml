@@ -1,0 +1,94 @@
+﻿
+<form action="/Admin/New/Add" method="post">
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Quản Lí Tin Tức</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <input type="hidden" name="NewsID" id="NewsID" value="0">
+                    <div class="form-group">
+                        <label>Tên Tin Tức</label>
+                        <input class="form-control" type="text" id="Name" name="Name" />
+                    </div>
+                    <div class="form-group">
+                        <label>Ảnh</label>
+                        <input id="Image" name="Image" type="text" class="form-control" />
+                        <input type="button" value="Tải ảnh lên" onclick="BrowseServer();" class="controls" />
+                    </div>
+                    <div class="form-group">
+                        <label>Mô tả</label>
+                        <textarea id="Description" name="Description" value=""></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Năm</label>
+                        <input class="form-control" type="text" id="Year" name="Year" />
+                    </div>
+                    <div class="form-group">
+                        <label>Lượt Xem</label>
+                        <input class="form-control" type="text" id="Viewed" name="Viewed" />
+                    </div>
+                  
+                    <div class="form-group">
+                        <label>Trạng Thái</label>
+                        <select name="Status">
+                            <option value="true">Kích hoạt</option>
+                            <option value="false">Huỷ kích hoạt</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group" hidden >
+                        <label>Ảnh News</label>
+                        <input id="ImageNews" name="ImageNews" type="text" class="form-control" />
+                        <input type="button" value="Tải ảnh lên" onclick="BrowseServer();" class="controls" />
+                    </div>
+                    <div class="form-group">
+                        <label>Mô tả ngắn</label>
+                        <input class="form-control" type="text" id="MoreDescription" name="MoreDescription" />
+                    </div>
+                   
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal"><i class="fa fa-lightbulb-o"></i>&nbsp; Đóng</button>
+                    <button type="reset" class="btn btn-warning btn-sm"><i class="fa fa-map-marker"></i>&nbsp; Làm mới</button>
+
+                    <input type="submit" name="submit" class="btn btn-success btn-sm" id="bt_sua" value="Cập Nhật" />
+                    <input type="submit" name="submit" class="btn btn-success btn-sm" id="bt_them" value="Thêm" />
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
+<script src="~/Areas/Admin/ckeditor/ckeditor.js"></script>
+<script src="~/Areas/Admin/ckfinder/ckfinder.js"></script>
+<script>
+
+    CKEDITOR.replace("Description");
+    CKFinder.setupCKEditor(CKEDITOR, '/ckfinder');
+</script>
+
+<script type="text/javascript">
+    function BrowseServer() {
+        var finder = new CKFinder();
+        finder.basePath = "/ckfinder";
+        finder.selectActionFunction = SetFileField;
+        finder.popup();
+    }
+    function SetFileField(fileUrl) {
+        document.getElementById("Image").value = fileUrl;
+        //document.getElementById("ImageNews").value = fileUrl;
+       
+    }
+ 
+
+</script>

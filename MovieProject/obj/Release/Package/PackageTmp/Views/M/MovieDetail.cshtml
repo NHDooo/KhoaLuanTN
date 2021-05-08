@@ -1,0 +1,196 @@
+﻿@model Models.EF.Movie
+
+@{
+    ViewBag.Title = "MovieDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var category = (Models.EF.Category)ViewBag.category;
+    var ListMovieRelated = (List<Models.EF.Movie>)ViewBag.ListMovieRelated;
+    var ListMovieNew1 = (List<Models.EF.Movie>)ViewBag.ListMovieNew1;
+    var movie = (Models.EF.Movie)ViewBag.movie;
+}
+
+<div class="single-page-agile-main">
+    <div class="container">
+        <!-- /w3l-medile-movies-grids -->
+        <div class="agileits-single-top">
+            <ol class="breadcrumb">
+                <li><a href="/">Trang Chủ</a></li>
+                <li><a href="/theloai/@category.CategoryID">@category.NameCategory</a> &nbsp;&nbsp;/&nbsp;&nbsp;<a href="#">@movie.Name</a></li>
+            </ol>
+        </div>
+        <div class="single-page-agile-info">
+            <!-- /movie-browse-agile -->
+            <div class="show-top-grids-w3lagile">
+                <div class="col-sm-8 single-left">
+                    <div class="song">
+                        <div class="song-info">
+                            <marquee>Bạn đang xem phim @movie.Name trên Website OneMovies chấm cơm - Chúc các bạn có những giây phút thư giãn và vui vẻ cùng OneMovies ^^</marquee>
+                        </div>
+                        <div class="video-grid-single-page-agileits">
+                            <video src="@movie.MovieLink" controls="controls" width="700" height="400">Trình duyệt bạn đang dùng không hỗ trợ tag video.</video>
+
+                        </div>
+                    </div>
+
+                    @{
+                        var session = (MovieProject.Common.UserLogin)Session[MovieProject.Common.CommonContants.USER_SESSION];
+                    }
+                    @if (session == null)
+
+
+                    {
+                        <div class="all-comments">
+                            <center><i>Bạn cần phải <a href="/dangnhap/">Đăng nhập  </a> để có thể tải xuống phim miễn phí với chất lượng cao và sử dụng một số tính năng thú vị khác nhé ^^</i></center>
+                        </div>
+
+                    }
+                    else
+                    {
+
+                        <div class="all-comments" style="font-size:20px;text-align:center">
+
+                            <a href="@Model.MovieLink"><span class="label label-success">Tải Xuống Phim</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="/error/"><span class="label label-warning">Thêm phim yêu thích</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="/error/"><span class="label label-danger">Báo cáo hỏng link!</span></a>
+                            <br />
+                            <br />
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <form class="form-horizontal">
+                                            <div class="form-group form-group-sm">
+                                                <label for="truyen-background" class="col-sm-2 col-md-5 control-label"><span class="label label-default">Màu nền</span></label>
+                                                <div class="col-sm-5 col-md-7">
+                                                    <select id="movie-background" class="form-group">
+                                                        <option value="#F4F4F4">Xám nhạt</option>
+                                                        <option value="#EAE4D3">Màu sepia</option>
+                                                        <option value="#FFFFE5">Vàng nhạt</option>
+                                                        <option value="#FAFAC8">Vàng đậm</option>
+                                                        <option value="#EFEFAB">Vàng ố</option>
+                                                        <option value="#FFF">Màu trắng</option>
+                                                        <option value="#232323">Màu tối</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <form class="form-horizontal">
+                                            <div class="form-group form-group-sm">
+                                                <label for="truyen-background" class="col-sm-2 col-md-5 control-label"><span class="label label-default">Màu chữ</span></label>
+                                                <div class="col-sm-5 col-md-7">
+                                                    <select id="movie-color">
+                                                        <option value="#F4F4F4">Xám nhạt</option>
+                                                        <option value="#EAE4D3">Màu sepia</option>
+                                                        <option value="#FFFFE5">Vàng nhạt</option>
+                                                        <option value="#FAFAC8">Vàng đậm</option>
+                                                        <option value="#EFEFAB">Vàng ố</option>
+                                                        <option value="#FFF">Màu trắng</option>
+                                                        <option value="#232323">Màu tối</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                         
+                        </div>
+
+
+                    }
+
+                    <div class="song-grid-right">
+                        <div class="share">
+                            <h5>Nội Dung:</h5>
+                            @Html.Raw(Model.Description)
+                        </div>
+                        <hr />
+                        <div class="all-comments">
+                            <div class="fb-like" data-href="https://www.facebook.com/OneMoviesDemo/" data-width="" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+                        </div>
+                        <br />
+                        <iframe width="700" height="400" src="@Model.TrailerLink" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="clearfix"> </div>
+
+                    <div class="all-comments">
+                        <div class="all-comments-info">
+                            <div class="fb-comments" data-href="http://localhost:52046/phim/@Model.MovieID" data-width="600" data-numposts="5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 single-right">
+                    <h3>Phim Liên Quan</h3>
+                    <div class="single-grid-right">
+                        @foreach (var plq in ListMovieRelated)
+                        {
+                            <div class="single-right-grids">
+                                <div class="col-md-4 single-right-grid-left">
+                                    <a href="/phim/@plq.MovieID"><img src="@plq.Image" alt="" /></a>
+                                </div>
+                                <div class="col-md-8 single-right-grid-right">
+                                    <a href="/phim/@plq.MovieID" class="title"> @plq.Name</a>
+                                    <p class="author"><a href="#" class="author">@plq.Directors</a></p>
+                                    <p class="views">@plq.Viewed views</p>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        }
+
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="clearfix"> </div>
+            </div>
+            <!-- //movie-browse-agile -->
+            <!--body wrapper start-->
+            <div class="w3_agile_banner_bottom_grid">
+                <div id="owl-demo" class="owl-carousel owl-theme">
+                    @foreach (var pm in ListMovieNew1)
+                    {
+                        <div class="item">
+                            <div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+                                <a href="/phim/@pm.MovieID" class="hvr-shutter-out-horizontal">
+                                    <img src="@pm.Image" title="album-name" class="img-responsive" alt=" " />
+                                    <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+                                </a>
+                                <div class="mid-1 agileits_w3layouts_mid_1_home">
+                                    <div class="w3l-movie-text">
+                                        <h6><a href="/phim/@pm.MovieID">@pm.Name</a></h6>
+                                    </div>
+                                    <div class="mid-2 agile_mid_2_home">
+                                        <p>@pm.Year</p>
+                                        <div class="block-stars">
+                                            <ul class="w3l-ratings">
+                                                <h5 style="font-size:12px;font-weight:bold;background-color:#E3B71E;border-radius:3px;padding:3px;"> Điểm IMDb: @pm.Rate</h5>
+
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="ribben">
+                                    <p>NEW</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+
+                </div>
+            </div>
+            <!--body wrapper end-->
+
+
+        </div>
+        <!-- //w3l-latest-movies-grids -->
+    </div>
+</div>
+<!-- //w3l-medile-movies-grids -->

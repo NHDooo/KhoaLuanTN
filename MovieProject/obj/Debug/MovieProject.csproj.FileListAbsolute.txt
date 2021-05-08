@@ -1,0 +1,221 @@
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\csc.exe
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\csc.exe.config
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\csc.rsp
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\csi.exe
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\csi.rsp
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\System.AppContext.dll
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\System.Collections.Immutable.dll
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\System.IO.FileSystem.dll
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\System.Reflection.Metadata.dll
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\vbc.exe
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\vbc.exe.config
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\vbc.rsp
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\VBCSCompiler.exe
+E:\PROJECT\MovieProject\MovieProject\bin\roslyn\VBCSCompiler.exe.config
+E:\PROJECT\MovieProject\MovieProject\bin\MovieProject.dll.config
+E:\PROJECT\MovieProject\MovieProject\bin\MovieProject.dll
+E:\PROJECT\MovieProject\MovieProject\bin\MovieProject.pdb
+E:\PROJECT\MovieProject\MovieProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\PROJECT\MovieProject\MovieProject\bin\Microsoft.Web.Infrastructure.dll
+E:\PROJECT\MovieProject\MovieProject\bin\Models.dll
+E:\PROJECT\MovieProject\MovieProject\bin\System.Web.Helpers.dll
+E:\PROJECT\MovieProject\MovieProject\bin\System.Web.Mvc.dll
+E:\PROJECT\MovieProject\MovieProject\bin\System.Web.Razor.dll
+E:\PROJECT\MovieProject\MovieProject\bin\System.Web.Webpages.Deployment.dll
+E:\PROJECT\MovieProject\MovieProject\bin\System.Web.Webpages.dll
+E:\PROJECT\MovieProject\MovieProject\bin\System.Web.Webpages.Razor.dll
+E:\PROJECT\MovieProject\MovieProject\bin\EntityFramework.dll
+E:\PROJECT\MovieProject\MovieProject\bin\Models.pdb
+E:\PROJECT\MovieProject\MovieProject\bin\Models.dll.config
+E:\PROJECT\MovieProject\MovieProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\PROJECT\MovieProject\MovieProject\bin\System.Web.Razor.xml
+E:\PROJECT\MovieProject\MovieProject\bin\System.Web.Webpages.xml
+E:\PROJECT\MovieProject\MovieProject\bin\System.Web.Webpages.Deployment.xml
+E:\PROJECT\MovieProject\MovieProject\bin\System.Web.Webpages.Razor.xml
+E:\PROJECT\MovieProject\MovieProject\bin\System.Web.Helpers.xml
+E:\PROJECT\MovieProject\MovieProject\bin\System.Web.Mvc.xml
+E:\PROJECT\MovieProject\MovieProject\bin\EntityFramework.xml
+E:\PROJECT\MovieProject\MovieProject\obj\Debug\MovieProject.csprojResolveAssemblyReference.cache
+E:\PROJECT\MovieProject\MovieProject\obj\Debug\MovieProject.dll
+E:\PROJECT\MovieProject\MovieProject\obj\Debug\MovieProject.pdb
+E:\PROJECT\MovieProject\MovieProject\bin\PagedList.dll
+E:\PROJECT\MovieProject\MovieProject\bin\PagedList.Mvc.dll
+E:\PROJECT\MovieProject\MovieProject\bin\PagedList.xml
+E:\PROJECT\MovieProject\MovieProject\bin\PagedList.Mvc.xml
+E:\PROJECT\MovieProject\MovieProject\bin\CKFinder.dll
+E:\PROJECT\MovieProject\MovieProject\bin\EntityFramework.SqlServer.dll
+E:\PROJECT\MovieProject\MovieProject\bin\EntityFramework.SqlServer.xml
+E:\PROJECT\MovieProject\MovieProject\bin\Newtonsoft.Json.dll
+E:\PROJECT\MovieProject\MovieProject\bin\Newtonsoft.Json.xml
+E:\PROJECT\MovieProject\MovieProject\bin\System.Linq.Dynamic.dll
+E:\PROJECT\MovieProject\MovieProject\bin\BotDetect.dll
+E:\PROJECT\MovieProject\MovieProject\bin\BotDetect.Web.Mvc.dll
+E:\PROJECT\MovieProject\MovieProject\bin\System.Data.SQLite.dll
+E:\PROJECT\MovieProject\MovieProject\bin\System.Data.SQLite.xml
+E:\PROJECT\MovieProject\MovieProject\bin\System.Data.SQLite.dll.config
+E:\PROJECT\MovieProject\MovieProject\bin\Facebook.dll
+E:\PROJECT\MovieProject\MovieProject\bin\Facebook.xml
+E:\PROJECT\MovieProject\MovieProject\bin\Common.dll
+E:\PROJECT\MovieProject\MovieProject\bin\Common.pdb
+D:\Khác\MovieProject\MovieProject\bin\roslyn\csc.exe
+D:\Khác\MovieProject\MovieProject\bin\roslyn\csc.exe.config
+D:\Khác\MovieProject\MovieProject\bin\roslyn\csc.rsp
+D:\Khác\MovieProject\MovieProject\bin\roslyn\csi.exe
+D:\Khác\MovieProject\MovieProject\bin\roslyn\csi.rsp
+D:\Khác\MovieProject\MovieProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Khác\MovieProject\MovieProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Khác\MovieProject\MovieProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Khác\MovieProject\MovieProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Khác\MovieProject\MovieProject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Khác\MovieProject\MovieProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Khác\MovieProject\MovieProject\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Khác\MovieProject\MovieProject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Khác\MovieProject\MovieProject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Khác\MovieProject\MovieProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Khác\MovieProject\MovieProject\bin\roslyn\System.AppContext.dll
+D:\Khác\MovieProject\MovieProject\bin\roslyn\System.Collections.Immutable.dll
+D:\Khác\MovieProject\MovieProject\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Khác\MovieProject\MovieProject\bin\roslyn\System.IO.FileSystem.dll
+D:\Khác\MovieProject\MovieProject\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Khác\MovieProject\MovieProject\bin\roslyn\System.Reflection.Metadata.dll
+D:\Khác\MovieProject\MovieProject\bin\roslyn\vbc.exe
+D:\Khác\MovieProject\MovieProject\bin\roslyn\vbc.exe.config
+D:\Khác\MovieProject\MovieProject\bin\roslyn\vbc.rsp
+D:\Khác\MovieProject\MovieProject\bin\roslyn\VBCSCompiler.exe
+D:\Khác\MovieProject\MovieProject\bin\roslyn\VBCSCompiler.exe.config
+D:\Khác\MovieProject\MovieProject\bin\MovieProject.dll.config
+D:\Khác\MovieProject\MovieProject\bin\MovieProject.dll
+D:\Khác\MovieProject\MovieProject\bin\MovieProject.pdb
+D:\Khác\MovieProject\MovieProject\bin\BotDetect.dll
+D:\Khác\MovieProject\MovieProject\bin\BotDetect.Web.Mvc.dll
+D:\Khác\MovieProject\MovieProject\bin\CKFinder.dll
+D:\Khác\MovieProject\MovieProject\bin\Common.dll
+D:\Khác\MovieProject\MovieProject\bin\EntityFramework.dll
+D:\Khác\MovieProject\MovieProject\bin\EntityFramework.SqlServer.dll
+D:\Khác\MovieProject\MovieProject\bin\Facebook.dll
+D:\Khác\MovieProject\MovieProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Khác\MovieProject\MovieProject\bin\Microsoft.Web.Infrastructure.dll
+D:\Khác\MovieProject\MovieProject\bin\Models.dll
+D:\Khác\MovieProject\MovieProject\bin\Newtonsoft.Json.dll
+D:\Khác\MovieProject\MovieProject\bin\PagedList.dll
+D:\Khác\MovieProject\MovieProject\bin\PagedList.Mvc.dll
+D:\Khác\MovieProject\MovieProject\bin\System.Data.SQLite.dll
+D:\Khác\MovieProject\MovieProject\bin\System.Linq.Dynamic.dll
+D:\Khác\MovieProject\MovieProject\bin\System.Web.Helpers.dll
+D:\Khác\MovieProject\MovieProject\bin\System.Web.Mvc.dll
+D:\Khác\MovieProject\MovieProject\bin\System.Web.Razor.dll
+D:\Khác\MovieProject\MovieProject\bin\System.Web.Webpages.Deployment.dll
+D:\Khác\MovieProject\MovieProject\bin\System.Web.Webpages.dll
+D:\Khác\MovieProject\MovieProject\bin\System.Web.Webpages.Razor.dll
+D:\Khác\MovieProject\MovieProject\bin\Common.pdb
+D:\Khác\MovieProject\MovieProject\bin\Models.pdb
+D:\Khác\MovieProject\MovieProject\bin\Models.dll.config
+D:\Khác\MovieProject\MovieProject\bin\EntityFramework.xml
+D:\Khác\MovieProject\MovieProject\bin\EntityFramework.SqlServer.xml
+D:\Khác\MovieProject\MovieProject\bin\Facebook.xml
+D:\Khác\MovieProject\MovieProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Khác\MovieProject\MovieProject\bin\Newtonsoft.Json.xml
+D:\Khác\MovieProject\MovieProject\bin\PagedList.xml
+D:\Khác\MovieProject\MovieProject\bin\PagedList.Mvc.xml
+D:\Khác\MovieProject\MovieProject\bin\System.Data.SQLite.xml
+D:\Khác\MovieProject\MovieProject\bin\System.Data.SQLite.dll.config
+D:\Khác\MovieProject\MovieProject\bin\System.Web.Razor.xml
+D:\Khác\MovieProject\MovieProject\bin\System.Web.Webpages.xml
+D:\Khác\MovieProject\MovieProject\bin\System.Web.Webpages.Deployment.xml
+D:\Khác\MovieProject\MovieProject\bin\System.Web.Webpages.Razor.xml
+D:\Khác\MovieProject\MovieProject\bin\System.Web.Helpers.xml
+D:\Khác\MovieProject\MovieProject\bin\System.Web.Mvc.xml
+D:\Khác\MovieProject\MovieProject\obj\Debug\MovieProject.csprojAssemblyReference.cache
+D:\Khác\MovieProject\MovieProject\obj\Debug\MovieProject.csproj.CoreCompileInputs.cache
+D:\Khác\MovieProject\MovieProject\obj\Debug\MovieProject.csproj.CopyComplete
+D:\Khác\MovieProject\MovieProject\obj\Debug\MovieProject.dll
+D:\Khác\MovieProject\MovieProject\obj\Debug\MovieProject.pdb
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\csc.exe
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\csc.exe.config
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\csc.rsp
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\csi.exe
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\csi.rsp
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\System.AppContext.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\System.Collections.Immutable.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\System.IO.FileSystem.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\System.Reflection.Metadata.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\vbc.exe
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\vbc.exe.config
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\vbc.rsp
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\VBCSCompiler.exe
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\roslyn\VBCSCompiler.exe.config
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\MovieProject.dll.config
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\MovieProject.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\MovieProject.pdb
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\BotDetect.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\BotDetect.Web.Mvc.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\CKFinder.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\Common.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\EntityFramework.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\EntityFramework.SqlServer.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\Facebook.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\Microsoft.Web.Infrastructure.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\Models.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\Newtonsoft.Json.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\PagedList.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\PagedList.Mvc.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\System.Data.SQLite.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\System.Linq.Dynamic.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\System.Web.Helpers.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\System.Web.Mvc.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\System.Web.Razor.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\System.Web.Webpages.Deployment.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\System.Web.Webpages.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\System.Web.Webpages.Razor.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\Common.pdb
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\Models.pdb
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\Models.dll.config
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\EntityFramework.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\EntityFramework.SqlServer.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\Facebook.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\Newtonsoft.Json.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\PagedList.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\PagedList.Mvc.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\System.Data.SQLite.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\System.Data.SQLite.dll.config
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\System.Web.Razor.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\System.Web.Webpages.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\System.Web.Webpages.Deployment.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\System.Web.Webpages.Razor.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\System.Web.Helpers.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\System.Web.Mvc.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\obj\Debug\MovieProject.csprojAssemblyReference.cache
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\obj\Debug\MovieProject.csproj.CoreCompileInputs.cache
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\obj\Debug\MovieProject.csproj.CopyComplete
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\obj\Debug\MovieProject.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\obj\Debug\MovieProject.pdb
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\WebMatrix.Data.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\WebMatrix.WebData.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\WebMatrix.Data.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\MovieProject\bin\WebMatrix.WebData.xml

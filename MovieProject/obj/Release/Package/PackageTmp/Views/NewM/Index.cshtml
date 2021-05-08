@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var news = (List<Models.EF.News>)ViewBag.news;
+    var NewsNew = (List<Models.EF.News>)ViewBag.NewsNew;
+    var NewsTop = (List<Models.EF.News>)ViewBag.NewsTop;
+}
+
+<div class="faq">
+    <div class="container">
+        <div class="agileits-news-top">
+            <ol class="breadcrumb">
+                <li><a href="/">Trang Chủ</a></li>
+                <li class="active">Tin tức</li>
+            </ol>
+        </div>
+        <div class="agileinfo-news-top-grids">
+            <div class="col-md-8 wthree-top-news-left">
+                <div class="wthree-news-left">
+                    <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+
+                        <div id="myTabContent" class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="home1" aria-labelledby="home1-tab">
+                                <div class="wthree-news-top-left">
+                                    @foreach (var item in news)
+                                    {
+                                        <div class="col-md-6 w3-agileits-news-left">
+                                            <div class="col-sm-5 wthree-news-img">
+                                                <a href="/tintuc/@item.NewsID"><img src="@item.Image" alt=""></a>
+                                            </div>
+                                            <div class="col-sm-7 wthree-news-info">
+                                                <h5><a href="/tintuc/@item.NewsID">@item.Name</a></h5>
+                                                <p>@Html.Raw(item.MoreDescription)</p>
+                                                <ul>
+                                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i>@item.CreatedDate</li>
+                                                    <li><i class="fa fa-eye" aria-hidden="true"></i> @item.Viewed</li>
+                                                </ul>
+                                            </div>
+                                            <div class="clearfix"> </div>
+                                        </div>
+                                    }
+
+                                    <div class="clearfix"> </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wthree-news-right">
+                <!-- news-right-top -->
+                <div class="news-right-top">
+                    <div class="wthree-news-right-heading">
+                        <h3>Tin tức cập nhật</h3>
+                    </div>
+                    <div class="wthree-news-right-top">
+                        <div class="news-grids-bottom">
+                            <!-- date -->
+                            <div id="design" class="date">
+                                <div id="cycler">
+                                 @foreach (var s in NewsNew)
+                                 {
+                                    <div class="date-text" style="display: block;">
+                                        <a href="/tintuc/@s.NewsID">@s.Name <span class="blinking" style="display: inline; opacity: 0.304313;"><img src="/assets/web/images/new.png" alt=""></span></a>
+                                        <p>@s.MoreDescription</p>
+                                    </div>
+                                 }
+                                </div>
+                                <script>
+                                    function blinker() {
+                                        $('.blinking').fadeOut(500);
+                                        $('.blinking').fadeIn(500);
+                                    }
+                                    setInterval(blinker, 1000);
+                                </script>
+                                <script>
+                                    function cycle($item, $cycler) {
+                                        setTimeout(cycle, 2000, $item.next(), $cycler);
+
+                                        $item.slideUp(1000, function () {
+                                            $item.appendTo($cycler).show();
+                                        });
+                                    }
+                                    cycle($('#cycler div:first'), $('#cycler'));
+                                </script>
+                            </div>
+                            <!-- //date -->
+                        </div>
+                    </div>
+                </div>
+                <!-- //news-right-top -->
+                <!-- news-right-bottom -->
+                <div class="news-right-bottom">
+                    <div class="wthree-news-right-heading">
+                        <h3>Tin tức hàng đầu</h3>
+                    </div>
+                    <div class="news-right-bottom-bg">
+                        <div class="news-grids-bottom">
+                          @foreach (var item in NewsTop)
+                          {
+                            <div class="top-news-grid">
+                                <div class="top-news-grid-heading">
+                                    <a href="/tintuc/@item.NewsID">@item.Name</a>
+                                </div>
+                                <div class="w3ls-news-t-grid top-t-grid">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-clock-o"></i>@item.CreatedDate</a></li>
+                                        <li><a href="#"><i class="fa fa-user"></i> ADMIN</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                          }
+
+                        </div>
+                    </div>
+                </div>
+                <!-- //news-right-bottom -->
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>

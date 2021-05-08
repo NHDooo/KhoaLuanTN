@@ -1,0 +1,169 @@
+﻿@using Models.EF;
+@model PagedList.IPagedList<About>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section jsFooter{
+
+  
+<script src="~/assets/admin/js/controller/aboutController.js"></script>
+
+}
+
+
+<div class="main-content">
+    <center>
+        <div>
+            <h3 style="background-color:lavender">DANH SÁCH GIỚI THIỆU </h3>
+        </div>
+    </center>
+    <div class="table-data__tool">
+        <div class="table-data__tool-left">
+            <div class="rs-select2--light rs-select2--md">
+                <form class="form-header" action="" method="POST">
+
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm" class="au-input au-input--xl">
+                </form>
+
+            </div>
+        </div>
+        <div class="table-data__tool-right">
+
+
+            <button onclick="Them()" type="button" class="au-btn au-btn-icon au-btn--green au-btn--small" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>&nbsp;&nbsp;Thêm mới</button>
+
+            <a href="/Admin/About"><button class="au-btn au-btn-icon au-btn--green au-btn--small"><i class="fa fa-refresh"></i>&nbsp;&nbsp;LÀM MỚI</button></a>
+
+
+        </div>
+    </div>
+
+    <div class="table-responsive table--no-card m-b-30">
+        <div class="table-responsive table-responsive-data2">
+            @if (TempData["AlertMessage"] != null)
+            {
+                <div id="AlertBox" class="alert @TempData["AlertType"] hide" role="alert">
+                    @TempData["AlertMessage"]
+                </div>
+            }
+
+            <table class="table table-data2" id="myTable">
+                <thead>
+                    <tr>
+
+                        <th>Tên</th>
+                        <th>Ảnh</th>
+                        <th>Mô tả</th>
+                        <th>Trạng Thái</th>
+                        <th>Chức năng</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (@Model != null)
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr style="text-align:left;" id="row_@item.AboutID" class="tr-shadow">
+                                <td style="display:none;">@item.AboutID</td>
+
+                                <td class="tr-shadow">@item.Name</td>
+                                <td class="tr-shadow"><img src="@item.Image" /></td>
+                                <td class="tr-shadow"><textarea cols="20" rows="5" readonly>@Html.Raw(item.Description)</textarea></td>
+
+                                <td class="tr-shadow"><a href="#" class="btn-active" data-id="@item.AboutID">@(item.Status ? "Kích hoạt" : "Huỷ Kích Hoạt")</a></td>
+
+                                <td>
+                                    <button type="button" onclick="Sua(this)" data-toggle="modal" data-target="#myModal" title="Sửa" class="btn btn-outline-success">
+                                        <i class="fa fa-pencil">Sửa</i>
+                                    </button>
+                                    &nbsp; &nbsp; &nbsp;
+                                   
+                                    @Ajax.ActionLink("Xoá", "Delete", new { @id = item.AboutID }, new AjaxOptions
+                               {
+                                   Confirm = "Bạn có muốn xoá bản ghi này?",
+                                   OnComplete = "$('row_" + @item.AboutID + "').remove()",
+
+                                   HttpMethod = "Delete"
+
+                               })
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <ul class="pagination modal-6" style="width:250px">
+
+                                        <li> @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))</li>
+
+                                    </ul>
+                                </td>
+                            </tr>
+
+                        }
+                    }
+            </table>
+
+
+
+
+        </div>
+
+    </div>
+    @Html.Partial("_AboutModal")
+    <script>
+        function Them() {
+            SetNull();
+            $("#bt_sua").hide();
+            $("#bt_them").show();
+        };
+        function SetNull() {
+            $("#NameAds").val('');
+        };
+        function Xoa(el) {
+            var id = el.parentNode.parentNode.cells[0].textContent;
+            $.ajax({
+                url: '/About/Delete/?id=' + id,
+                type: 'POST',
+                dataType: 'json',
+                success: function () {
+
+                    alert("Xóa thành công");
+                    window.location.reload();
+                },
+                error: function () {
+                    alert("Xóa thất bại");
+                    window.location.reload();
+                }
+            });
+        }
+        function Sua(el) {
+            event.preventDefault();
+            $("#bt_sua").show();
+            $("#bt_them").hide();
+            var id = el.parentNode.parentNode.cells[0].textContent;
+            $.ajax({
+                url: '/About/getList/?id=' + id,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    var json = JSON.parse(data);
+                    $("#AboutID").val(json.AboutID);
+                    $("#Name").val(json.Name);
+                    $("#Image").val(json.Image);
+                    $("#Description").val(json.Description);
+                    CKEDITOR.instances['Description'].setData(json.Description);
+                    $("#Status").val(json.Status);
+
+                },
+                error: function (err) {
+                    alert("Error: " + err.responseText);
+                }
+            });
+        }
+    </script>
+

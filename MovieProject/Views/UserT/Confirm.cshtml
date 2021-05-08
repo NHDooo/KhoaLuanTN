@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Confirm";
+ }
+<br /> <br />
+       <div class="alert alert-warning " id="previous">
+           <strong>Tài khoản của bạn đã được xác thực.</strong>
+           @*<input type="submit" class="btn btn-warning" value="Confirm" onclick="Verified()" />*@
+           <li><a href="/dangnhap/">Đăng nhập</a></li>
+
+       </div>
+       <div class="alert alert-success" id="after" style="display:none">
+           <strong>
+               <span class="glyphicon glyphicon-ok">
+               </span>
+               Your account is active now
+           </strong>
+
+       </div>
+       <script>
+           function Verified() {
+               $.ajax({
+                   type: "post",
+                   url: "UserT/ChangeStatus",
+                   data: { 'RegID': '@ViewBag.RegID' }
+                   success: function (msg) {
+                       $("#previous").hide();
+                       $("#after").show();
+                       alert(msg);
+
+                   }
+               })
+           };
+       </script>

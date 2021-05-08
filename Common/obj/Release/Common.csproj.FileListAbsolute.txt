@@ -1,0 +1,5 @@
+E:\PROJECT\MovieProject\Common\bin\Release\Common.dll
+E:\PROJECT\MovieProject\Common\bin\Release\Common.pdb
+E:\PROJECT\MovieProject\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+E:\PROJECT\MovieProject\Common\obj\Release\Common.dll
+E:\PROJECT\MovieProject\Common\obj\Release\Common.pdb

@@ -1,0 +1,130 @@
+﻿@using PagedList.Mvc
+@using PagedList;
+@model IPagedList<Models.EF.Movie>
+@{
+    ViewBag.Title = "Danh sách phim theo quốc gia";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var country = (Models.EF.Country)ViewBag.country;
+    var ListMovieNew = (List<Models.EF.Movie>)ViewBag.ListMovieNew;
+
+
+}
+
+<div class="general-agileits-w3l">
+    <div class="w3l-medile-movies-grids">
+
+        <!-- /movie-browse-agile -->
+
+        <div class="movie-browse-agile">
+            <!--/browse-agile-w3ls -->
+            <div class="browse-agile-w3ls general-w3ls">
+                <div class="tittle-head">
+                    <h4 class="latest-text">Phim @country.Name </h4>
+                    <div class="container">
+                        <div class="agileits-single-top">
+                            <ol class="breadcrumb">
+                                <li><a href="/">Trang chủ</a></li>
+                                <li class="active"><a href="/theloai/@country.CountryID">PHIM @country.Name</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="browse-inner">
+                        @foreach (var s in Model)
+                        {
+                            <div class="col-md-2 w3l-movie-gride-agile">
+                                <a href="/phim/@s.MovieID" class="hvr-shutter-out-horizontal">
+                                    <img src="@s.Image" title="album-name" alt="@s.Name" width="182" height="268" />
+                                    <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+                                </a>
+                                <div class="mid-1">
+                                    <div class="w3l-movie-text">
+                                        <h6><a href="/phim/@s.MovieID">@s.Name</a></h6>
+                                    </div>
+                                    <div class="mid-2">
+
+                                        <p>@s.Year</p>
+                                      
+                                        <div class="block-stars">
+                                            <ul class="w3l-ratings">
+                                                <h5 style="font-size:12px;font-weight:bold;background-color:#E3B71E;border-radius:3px;padding:3px;"> Điểm IMDb: @s.Rate</h5>
+
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        }
+
+
+
+                        <div class="clearfix"> </div>
+                    </div>
+                    <!-- /latest-movies1 -->
+
+                </div>
+            </div>
+            <!--//browse-agile-w3ls -->
+            <!--Phân Trang-->
+            <div style="text-align:center">
+                <ul>
+                    <li>
+                        @Html.PagedListPager(Model, Page => Url.Action("CountryPage", new { Page }), PagedListRenderOptions.PageNumbersOnly)
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+        <!-- //movie-browse-agile -->
+        <!--body wrapper start-->
+        <!--body wrapper start-->
+        <div class="review-slider">
+            <h4 class="latest-text">
+                Phim mới cập nhật
+            </h4>
+            <div class="container">
+                <div class="w3_agile_banner_bottom_grid">
+                    <div id="owl-demo" class="owl-carousel owl-theme">
+                        @foreach (var pm in ListMovieNew)
+                        {
+                            <div class="item">
+                                <div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+                                    <a href="/phim/@pm.MovieID" class="hvr-shutter-out-horizontal">
+                                        <img src="@pm.Image" title="album-name" class="img-responsive" alt="@pm.Name" />
+                                        <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+                                    </a>
+                                    <div class="mid-1 agileits_w3layouts_mid_1_home">
+                                        <div class="w3l-movie-text">
+                                            <h6><a href="/phim/@pm.MovieID">@pm.Name</a></h6>
+                                        </div>
+                                        <div class="mid-2 agile_mid_2_home">
+                                            <p>@pm.Year</p>
+                                            <div class="block-stars">
+                                                <ul class="w3l-ratings">
+                                                    <h5 style="font-size:12px;font-weight:bold;background-color:#E3B71E;border-radius:3px;padding:3px;"> Điểm IMDb: @pm.Rate</h5>
+
+                                                </ul>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ribben">
+                                        <p>NEW</p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+                <!--body wrapper end-->
+            </div>
+        </div>
+    </div>
+    <!-- //w3l-medile-movies-grids -->
+</div>
+<!-- //comedy-w3l-agileits -->

@@ -1,0 +1,22 @@
+﻿
+<div class="w3l_sign_in_register">
+    @{ 
+        var session = (MovieProject.Common.UserLogin)Session[MovieProject.Common.CommonContants.USER_SESSION];
+    }
+    @if (session == null)
+    {
+        <ul>
+            <li><i class="fa fa-phone" aria-hidden="true"></i> +84 392 258 8899</li>
+            <li><a href="/dangnhap/">Đăng nhập</a></li>
+            <li><a href="/dangky/">Đăng ký</a></li>
+        </ul>
+    }
+    else
+    {
+        <i><strong>Xin Chào:@session.UserName</strong></i>
+        <i>@Html.ActionLink("Đăng xuất","Logout","UserT")</i>
+    }
+
+</div>
+
+<div class="clearfix"> </div>

@@ -1,0 +1,17 @@
+E:\PROJECT\MovieProject\Common\bin\Debug\Common.dll
+E:\PROJECT\MovieProject\Common\bin\Debug\Common.pdb
+E:\PROJECT\MovieProject\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\PROJECT\MovieProject\Common\obj\Debug\Common.dll
+E:\PROJECT\MovieProject\Common\obj\Debug\Common.pdb
+D:\Khác\MovieProject\Common\bin\Debug\Common.dll
+D:\Khác\MovieProject\Common\bin\Debug\Common.pdb
+D:\Khác\MovieProject\Common\obj\Debug\Common.csprojAssemblyReference.cache
+D:\Khác\MovieProject\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\Khác\MovieProject\Common\obj\Debug\Common.dll
+D:\Khác\MovieProject\Common\obj\Debug\Common.pdb
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Common\bin\Debug\Common.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Common\bin\Debug\Common.pdb
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Common\obj\Debug\Common.csprojAssemblyReference.cache
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Common\obj\Debug\Common.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Common\obj\Debug\Common.pdb

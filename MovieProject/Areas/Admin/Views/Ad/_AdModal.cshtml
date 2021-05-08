@@ -1,0 +1,64 @@
+﻿<form action="/Admin/Ad/Add" method="post">
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Thêm Quảng Cáo</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <input type="hidden" name="AdsID" id="AdsID" value="0">
+                    <div class="form-group">
+                        <label>Tên Ads</label>
+                        <input class="form-control" type="text" id="NameAds" name="NameAds" />
+                    </div>
+                    <div class="form-group">
+                        <label>Ảnh</label>
+                        <input id="ImageAds" name="ImageAds" type="text" class="form-control" />
+                        <input type="button" value="Tải ảnh lên" onclick="BrowseServer();" class="controls" />
+                    </div>
+                    <div class="form-group">
+                        <label>Url</label>
+                        <input class="form-control" type="text" id="UrlAds" name="UrlAds" />
+                    </div>
+                    <div class="form-group">
+                        <label>Trạng Thái</label>
+                        <select name="Status">
+                            <option value="true">Kích hoạt</option>
+                            <option value="false">Huỷ kích hoạt</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal"><i class="fa fa-lightbulb-o"></i>&nbsp; Đóng</button>
+                    <button type="reset" class="btn btn-warning btn-sm"><i class="fa fa-map-marker"></i>&nbsp; Làm mới</button>
+
+                    <input type="submit" name="submit" class="btn btn-success btn-sm" id="bt_sua" value="Cập Nhật" />
+                    <input type="submit" name="submit" class="btn btn-success btn-sm" id="bt_them" value="Thêm" />
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
+<script src="~/Scripts/ckfinder/ckfinder.js"></script>
+<script type="text/javascript">
+    function BrowseServer() {
+        var finder = new CKFinder();
+        finder.basePath = "~/Scrips/ckfinder";
+        finder.selectActionFunction = SetFileField;
+        finder.popup();
+    }
+    function SetFileField(fileUrl) {
+        document.getElementById("ImageAds").value = fileUrl;
+    }
+
+</script>

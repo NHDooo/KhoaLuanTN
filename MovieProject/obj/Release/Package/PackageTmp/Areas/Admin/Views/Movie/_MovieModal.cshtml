@@ -1,0 +1,156 @@
+﻿@{
+    var listcategory = (List<Models.EF.Category>)ViewBag.listcategory;
+    var listcountry = (List<Models.EF.Country>)ViewBag.listcountry;
+}
+
+<form action="/Admin/Movie/Add" method="post">
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Quản Lí Phim</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <input type="hidden" name="MovieID" id="MovieID" value="0">
+                    <div class="form-group">
+                        <label>Tên Phim</label>
+                        <input class="form-control" type="text" id="Name" name="Name" />
+                    </div>
+                    <div class="form-group">
+                        <label>Ảnh</label>
+                        <input id="Image" name="Image" type="text" class="form-control" />
+                        <input type="button" value="Tải ảnh lên" onclick="BrowseServer();" class="controls" />
+                    </div>
+                    <div class="form-group">
+                        <label>Ảnh(xml)</label>
+                        <input class="form-control" type="text" id="MoreImages" name="MoreImages" />
+                    </div>
+                    <div class="form-group">
+                        <label>Diễn Viên</label>
+                        <input class="form-control" type="text" id="Actor" name="Actor" />
+                    </div>
+                    <div class="form-group">
+                        <label>Mô tả</label>
+                        <textarea id="Description" name="Description" value=""></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Đạo Diễn</label>
+                        <input class="form-control" type="text" id="Directors" name="Directors" />
+                    </div>
+                    <div class="form-group">
+                        <label>Thời Lượng</label>
+                        <input class="form-control" type="text" id="Time" name="Time" />
+                    </div>
+                    <div class="form-group">
+                        <label>Năm</label>
+                        <input class="form-control" type="text" id="Year" name="Year" />
+                    </div>
+                 
+                    <div class="form-group">
+                        <label>Link Phim</label>
+
+                        <textarea id="MovieLink" name="MovieLink" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Link Trailer</label>
+
+                        <textarea id="TrailerLink" name="TrailerLink" class="form-control"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Thể Loại</label>
+                        <select id="CategoryID" name="CategoryID" class="form-control">
+                            @foreach (var s in listcategory)
+                            {
+                                <option value="@s.CategoryID">@s.NameCategory</option>
+                            }
+
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Đánh Giá (IMDb)</label>
+
+                        <select class="form-control" id="Rate" name="Rate">
+                            <option value="1">P1</option>
+                            <option value="2">P2</option>
+                            <option value="3">P3</option>
+                            <option value="4">P4</option>
+                            <option value="5">P5</option>
+                            <option value="6">P6</option>
+                            <option value="7">P7</option>
+                            <option value="8">P8</option>
+                            <option value="9">P9</option>
+                            <option value="10">P10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Lượt Xem</label>
+                        <input class="form-control" type="text" id="Viewed" name="Viewed" />
+                    </div>
+                    <div class="form-group">
+                        <label>Trạng Thái</label>
+                        <select name="Status">
+                            <option value="true">Kích hoạt</option>
+                            <option value="false">Huỷ kích hoạt</option>
+                        </select>
+                    </div>
+                    <div class="form-group" hidden>
+                        <label>Top Hot</label>
+                        <input class="form-control" type="date" id="TopHot" name="TopHot" />
+                    </div>
+                    <div class="form-group">
+                        <label>Quốc Gia</label>
+                        <select id="CountryID" name="CountryID" class="form-control">
+                            @foreach (var s in listcountry)
+                            {
+                                <option value="@s.CountryID">@s.Name</option>
+                            }
+
+                        </select>
+                    </div>
+
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal"><i class="fa fa-lightbulb-o"></i>&nbsp; Đóng</button>
+                    <button type="reset" class="btn btn-warning btn-sm"><i class="fa fa-map-marker"></i>&nbsp; Làm mới</button>
+
+                    <input type="submit" name="submit" class="btn btn-success btn-sm" id="bt_sua" value="Cập Nhật" />
+                    <input type="submit" name="submit" class="btn btn-success btn-sm" id="bt_them" value="Thêm" />
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
+<script src="~/Areas/Admin/ckeditor/ckeditor.js"></script>
+<script src="~/Areas/Admin/ckfinder/ckfinder.js"></script>
+
+<script>
+
+    CKEDITOR.replace("Description");
+    
+    CKFinder.setupCKEditor(null, '/ckfinder');
+</script>
+<script type="text/javascript">
+    function BrowseServer() {
+        var finder = new CKFinder();
+        finder.basePath = "~/Scrips/ckfinder";
+        finder.selectActionFunction = SetFileField;
+        finder.popup();
+    }
+    function SetFileField(fileUrl) {
+        document.getElementById("Image").value = fileUrl;
+    }
+
+</script>

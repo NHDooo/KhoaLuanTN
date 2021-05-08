@@ -1,0 +1,161 @@
+﻿@model Models.EF.News
+@{
+    ViewBag.Title = "NewDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var news = (Models.EF.News)ViewBag.news;
+    var NewsNew = (List<Models.EF.News>)ViewBag.NewsNew;
+    var NewsTop = (List<Models.EF.News>)ViewBag.NewsTop;
+    var ListMovieNew1 = (List<Models.EF.Movie>)ViewBag.ListMovieNew1;
+}
+}
+
+<div class="faq">
+    <div class="container">
+        <div class="agileits-news-top">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="news.html">Tin Tức</a></li>
+
+            </ol>
+        </div>
+        <div class="agileinfo-news-top-grids">
+            <div class="col-md-8 wthree-top-news-left">
+                <div class="wthree-news-left">
+                    <div class="wthree-news-left-img">
+                        @*<img src="@news.ImageNews" alt="">*@
+                        <h4>@news.Name</h4>
+                        <div class="s-author">
+                            <p>Posted By <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Admin</a> &nbsp;&nbsp; <i class="fa fa-calendar" aria-hidden="true"></i> @news.CreatedDate &nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true">@news.Viewed</i></p>
+                        </div>
+                        <div id="fb-root"></div>
+                        <div class="news-shar-buttons">
+                            <div class="all-comments">
+                                <div class="fb-like" data-href="https://www.facebook.com/OneMoviesDemo/" data-width="" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                            </div>
+                        </div>
+                        <div class="w3-agile-news-text">
+                            <p>
+                                @Html.Raw(news.Description)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- agile-comments -->
+                <div class="all-comments">
+                    <div class="all-comments-info">
+                        <div class="fb-comments" data-href="http://localhost:52046/tintuc/@news.NewsID" data-width="600" data-numposts="5"></div>
+                    </div>
+                </div>
+                <!-- //agile-comments -->
+            </div>
+            <div class="col-md-4 wthree-news-right">
+                <!-- news-right-top -->
+                <div class="news-right-top">
+                    <div class="wthree-news-right-heading">
+                        <h3>Tin Tức Cập Nhật</h3>
+                    </div>
+                    <div class="wthree-news-right-top">
+                        <div class="news-grids-bottom">
+                            <!-- date -->
+                            <div id="design" class="date">
+                                <div id="cycler">
+                                    @foreach (var s in NewsNew)
+                                    {
+                                        <div class="date-text" style="display: block;">
+                                            <a href="/tintuc/@s.NewsID">@s.Name <span class="blinking" style="display: inline; opacity: 0.304313;"><img src="/assets/web/images/new.png" alt=""></span></a>
+                                            <p>@s.MoreDescription</p>
+                                        </div>
+                                    }
+
+                                </div>
+                                <script>
+                                    function blinker() {
+                                        $('.blinking').fadeOut(500);
+                                        $('.blinking').fadeIn(500);
+                                    }
+                                    setInterval(blinker, 1000);
+                                </script>
+                                <script>
+                                    function cycle($item, $cycler) {
+                                        setTimeout(cycle, 2000, $item.next(), $cycler);
+
+                                        $item.slideUp(1000, function () {
+                                            $item.appendTo($cycler).show();
+                                        });
+                                    }
+                                    cycle($('#cycler div:first'), $('#cycler'));
+                                </script>
+                            </div>
+                            <!-- //date -->
+                        </div>
+                    </div>
+                </div>
+                <!-- //news-right-top -->
+                <!-- news-right-bottom -->
+                <div class="news-right-bottom">
+                    <div class="wthree-news-right-heading">
+                        <h3>Top News</h3>
+                    </div>
+                    <div class="news-right-bottom-bg">
+                        <div class="news-grids-bottom">
+                            @foreach (var item in NewsTop)
+                            {
+                                <div class="top-news-grid">
+                                    <div class="top-news-grid-heading">
+                                        <a href="/tintuc/@item.NewsID">@item.Name</a>
+                                    </div>
+                                    <div class="w3ls-news-t-grid top-t-grid">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-clock-o"></i>@item.CreatedDate</a></li>
+                                            <li><a href="#"><i class="fa fa-user"></i> ADMIN</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+                <!-- //news-right-bottom -->
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="w3_agile_banner_bottom_grid">
+        <div id="owl-demo" class="owl-carousel owl-theme">
+            @foreach (var pm in ListMovieNew1)
+            {
+                <div class="item">
+                    <div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+                        <a href="/phim/@pm.MovieID" class="hvr-shutter-out-horizontal">
+                            <img src="@pm.Image" title="album-name" class="img-responsive" alt=" " />
+                            <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+                        </a>
+                        <div class="mid-1 agileits_w3layouts_mid_1_home">
+                            <div class="w3l-movie-text">
+                                <h6><a href="/phim/@pm.MovieID">@pm.Name</a></h6>
+                            </div>
+                            <div class="mid-2 agile_mid_2_home">
+                                <p>@pm.Year</p>
+                                <div class="block-stars">
+                                    <ul class="w3l-ratings">
+                                        <h5 style="font-size:12px;font-weight:bold;background-color:#E3B71E;border-radius:3px;padding:3px;"> Điểm IMDb: @pm.Rate</h5>
+
+                                    </ul>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="ribben">
+                            <p>NEW</p>
+                        </div>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </div>
+
+</div>

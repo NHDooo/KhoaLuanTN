@@ -1,0 +1,151 @@
+﻿@using Models.EF
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@model IEnumerable<Comment>
+@section jsFooter{
+
+    <script src="/assets/admin/js/controller/adController.js"></script>
+}
+
+
+<div class="main-content">
+    <center>
+        <div>
+            <h3 style="background-color:lavender">DANH SÁCH BÌNH LUẬN </h3>
+        </div>
+    </center>
+    <div class="table-data__tool">
+        <div class="table-data__tool-left">
+            <div class="rs-select2--light rs-select2--md">
+                <form class="form-header" action="" method="POST">
+
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm" class="au-input au-input--xl">
+                </form>
+
+            </div>
+        </div>
+        <div class="table-data__tool-right">
+
+
+            <button onclick="Them()" type="button" class="au-btn au-btn-icon au-btn--green au-btn--small" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>&nbsp;&nbsp;Thêm mới</button>
+
+            <a href="/Admin/Movie"><button class="au-btn au-btn-icon au-btn--green au-btn--small"><i class="fa fa-refresh"></i>&nbsp;&nbsp;LÀM MỚI</button></a>
+
+
+        </div>
+    </div>
+
+    <div class="table-responsive table--no-card m-b-30">
+        <div class="table-responsive table-responsive-data2">
+            @if (TempData["AlertMessage"] != null)
+            {
+                <div id="AlertBox" class="alert @TempData["AlertType"] hide" role="alert">
+                    @TempData["AlertMessage"]
+                </div>
+            }
+
+            <table class="table table-data2" id="myTable">
+                <thead>
+                    <tr>
+
+                        <th>MÃ PHIM</th>
+                        <th>Tên </th>
+                        <th>Nội Dung</th>
+                        <th>Ngày Tạo</th>
+                        <th>Trạng Thái</th>
+                        <th>Chức Năng</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (@Model != null)
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr style="text-align:left;" id="row_@item.CommentID" class="tr-shadow">
+                                <td style="display:none;">@item.CommentID</td>
+
+                                <td class="tr-shadow">@item.MovieID</td>
+                                <td class="tr-shadow"><img src="@item.Name" /></td>
+                                <td class="tr-shadow">@item.Content</td>
+                                <td class="tr-shadow">@item.CreatedDate</td>
+                                <td class="tr-shadow"><a href="#" class="btn-active" data-id="@item.CommentID">@(item.Status ? "Kích hoạt" : "Huỷ Kích Hoạt")</a></td>
+
+                                <td>
+                                    <button type="button" onclick="Sua(this)" data-toggle="modal" data-target="#myModal" title="Sửa" class="btn btn-outline-success">
+                                        <i class="fa fa-pencil">Sửa</i>
+                                    </button>
+                                    &nbsp; &nbsp; &nbsp;
+                                    <button class="btn btn-outline-warning">
+                                        <i class="fa fa-trash-o">
+                                            @Ajax.ActionLink("Xoá", "Delete", new { @id = item.CommentID }, new AjaxOptions
+                                       {
+                                           Confirm = "Bạn có muốn xoá bản ghi này?",
+                                           OnComplete = "$('row_" + @item.CommentID + "').remove()",
+                                           HttpMethod = "Delete"
+                                       })
+                                        </i>
+
+                                    </button>
+                                </td>
+                            </tr>
+
+                        }
+                    }
+            </table>
+
+        </div>
+    </div>
+    @Html.Partial("_CommentModal")
+    <script>
+        function Them() {
+            SetNull();
+            $("#bt_sua").hide();
+            $("#bt_them").show();
+        };
+        function SetNull() {
+            $("#NameAds").val('');
+        };
+        function Xoa(el) {
+            var id = el.parentNode.parentNode.cells[0].textContent;
+            $.ajax({
+                url: '/Comment/delList/?id=' + id,
+                type: 'POST',
+                dataType: 'json',
+                success: function () {
+                    alert("Xóa thành công");
+                    window.location.reload();
+                },
+                error: function () {
+                    alert("Xóa thất bại");
+                    window.location.reload();
+                }
+            });
+        }
+        function Sua(el) {
+            event.preventDefault();
+            $("#bt_sua").show();
+            $("#bt_them").hide();
+            var id = el.parentNode.parentNode.cells[0].textContent;
+            $.ajax({
+                url: '/Comment/getList/?id=' + id,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    var json = JSON.parse(data);
+                    $("#CommentID").val(json.AdsID);
+                    $("#MovieID").val(json.NameAds);
+                    $("#Name").val(json.ImageAds);
+                    $("#Content").val(json.UrlAds);
+                    $("#Status").val(json.Status);
+
+                },
+                error: function (err) {
+                    alert("Error: " + err.responseText);
+                }
+            });
+        }
+    </script>
+

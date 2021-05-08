@@ -1,0 +1,94 @@
+E:\PROJECT\MovieProject\Models\bin\Debug\Models.dll.config
+E:\PROJECT\MovieProject\Models\bin\Debug\Models.dll
+E:\PROJECT\MovieProject\Models\bin\Debug\Models.pdb
+E:\PROJECT\MovieProject\Models\bin\Debug\EntityFramework.dll
+E:\PROJECT\MovieProject\Models\bin\Debug\EntityFramework.SqlServer.dll
+E:\PROJECT\MovieProject\Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\PROJECT\MovieProject\Models\bin\Debug\PagedList.dll
+E:\PROJECT\MovieProject\Models\bin\Debug\PagedList.Mvc.dll
+E:\PROJECT\MovieProject\Models\bin\Debug\System.Linq.Dynamic.dll
+E:\PROJECT\MovieProject\Models\bin\Debug\System.Web.Helpers.dll
+E:\PROJECT\MovieProject\Models\bin\Debug\System.Web.Mvc.dll
+E:\PROJECT\MovieProject\Models\bin\Debug\System.Web.Razor.dll
+E:\PROJECT\MovieProject\Models\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\PROJECT\MovieProject\Models\bin\Debug\System.Web.WebPages.dll
+E:\PROJECT\MovieProject\Models\bin\Debug\System.Web.WebPages.Razor.dll
+E:\PROJECT\MovieProject\Models\bin\Debug\EntityFramework.xml
+E:\PROJECT\MovieProject\Models\bin\Debug\EntityFramework.SqlServer.xml
+E:\PROJECT\MovieProject\Models\bin\Debug\PagedList.xml
+E:\PROJECT\MovieProject\Models\bin\Debug\PagedList.Mvc.xml
+E:\PROJECT\MovieProject\Models\bin\Debug\System.Web.Helpers.xml
+E:\PROJECT\MovieProject\Models\bin\Debug\System.Web.Mvc.xml
+E:\PROJECT\MovieProject\Models\bin\Debug\System.Web.Razor.xml
+E:\PROJECT\MovieProject\Models\bin\Debug\System.Web.WebPages.xml
+E:\PROJECT\MovieProject\Models\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\PROJECT\MovieProject\Models\bin\Debug\System.Web.WebPages.Razor.xml
+E:\PROJECT\MovieProject\Models\obj\Debug\Models.dll
+E:\PROJECT\MovieProject\Models\obj\Debug\Models.pdb
+E:\PROJECT\MovieProject\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+E:\PROJECT\MovieProject\Models\bin\Debug\Common.dll
+E:\PROJECT\MovieProject\Models\bin\Debug\Common.pdb
+D:\Khác\MovieProject\Models\bin\Debug\Models.dll.config
+D:\Khác\MovieProject\Models\bin\Debug\Models.dll
+D:\Khác\MovieProject\Models\bin\Debug\Models.pdb
+D:\Khác\MovieProject\Models\bin\Debug\Common.dll
+D:\Khác\MovieProject\Models\bin\Debug\EntityFramework.dll
+D:\Khác\MovieProject\Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Khác\MovieProject\Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Khác\MovieProject\Models\bin\Debug\PagedList.dll
+D:\Khác\MovieProject\Models\bin\Debug\PagedList.Mvc.dll
+D:\Khác\MovieProject\Models\bin\Debug\System.Linq.Dynamic.dll
+D:\Khác\MovieProject\Models\bin\Debug\System.Web.Helpers.dll
+D:\Khác\MovieProject\Models\bin\Debug\System.Web.Mvc.dll
+D:\Khác\MovieProject\Models\bin\Debug\System.Web.Razor.dll
+D:\Khác\MovieProject\Models\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Khác\MovieProject\Models\bin\Debug\System.Web.WebPages.dll
+D:\Khác\MovieProject\Models\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Khác\MovieProject\Models\bin\Debug\Common.pdb
+D:\Khác\MovieProject\Models\bin\Debug\EntityFramework.xml
+D:\Khác\MovieProject\Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Khác\MovieProject\Models\bin\Debug\PagedList.xml
+D:\Khác\MovieProject\Models\bin\Debug\PagedList.Mvc.xml
+D:\Khác\MovieProject\Models\bin\Debug\System.Web.Helpers.xml
+D:\Khác\MovieProject\Models\bin\Debug\System.Web.Mvc.xml
+D:\Khác\MovieProject\Models\bin\Debug\System.Web.Razor.xml
+D:\Khác\MovieProject\Models\bin\Debug\System.Web.WebPages.xml
+D:\Khác\MovieProject\Models\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Khác\MovieProject\Models\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Khác\MovieProject\Models\obj\Debug\Models.csprojAssemblyReference.cache
+D:\Khác\MovieProject\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\Khác\MovieProject\Models\obj\Debug\Models.csproj.CopyComplete
+D:\Khác\MovieProject\Models\obj\Debug\Models.dll
+D:\Khác\MovieProject\Models\obj\Debug\Models.pdb
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\Models.dll.config
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\Models.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\Models.pdb
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\Common.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\EntityFramework.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\PagedList.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\PagedList.Mvc.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\System.Linq.Dynamic.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\System.Web.Helpers.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\System.Web.Mvc.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\System.Web.Razor.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\System.Web.WebPages.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\Common.pdb
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\EntityFramework.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\PagedList.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\PagedList.Mvc.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\System.Web.Helpers.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\System.Web.Mvc.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\System.Web.Razor.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\System.Web.WebPages.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\obj\Debug\Models.csprojAssemblyReference.cache
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\obj\Debug\Models.csproj.CopyComplete
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\obj\Debug\Models.dll
+D:\Học tập\C#\ASP.NET MVC C#\Từ thiện\CharityProject\CharityProject\Models\obj\Debug\Models.pdb

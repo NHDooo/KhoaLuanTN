@@ -1,0 +1,185 @@
+﻿@using Models.EF
+@using Models.Dao
+
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string key = Request.QueryString["searchKey"];
+    List<Movie> result = new List<Movie>();
+    var ListMovieNew = (List<Models.EF.Movie>)ViewBag.ListMovieNew;
+}
+@{
+    if (string.IsNullOrEmpty(key))
+    {
+        result = new MovieDao().ListMovieNew(20);
+    <div class="general-agileits-w3l">
+        <div class="w3l-medile-movies-grids">
+
+            <!-- /movie-browse-agile -->
+
+            <div class="movie-browse-agile">
+                <!--/browse-agile-w3ls -->
+                <div class="browse-agile-w3ls general-w3ls">
+                    <div class="tittle-head">
+                        <h4 class="latest-text">TÌM KIẾM</h4>
+                        <div class="container">
+                            <div class="agileits-single-top">
+                                <ol class="breadcrumb">
+                                    <li><a href="/">Trang chủ</a></li>
+                                    <li class="active"><a href="#">Kết quả tìm kiếm với từ khoá "@key"</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="browse-inner">
+                            @foreach (var s in result)
+                            {
+                                <div class="col-md-2 w3l-movie-gride-agile">
+                                    <a href="/phim/@s.MovieID" class="hvr-shutter-out-horizontal">
+                                        <img src="@s.Image" title="album-name" alt="@s.Name" width="182" height="268" />
+                                        <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+                                    </a>
+                                    <div class="mid-1">
+                                        <div class="w3l-movie-text" style="display: flex;">
+                                            <h4 style="flex:1;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">@s.Name</h4>
+                                        </div>
+                                        <div class="mid-2" style="display: flex; justify-content: space-between;">
+
+                                            <div class="blog-grid" style="text-align:left;">
+                                                <span>@s.Year</span>
+                                                <br />
+                                                <h5>
+                                                    @s.Time
+                                                </h5>
+                                            </div>
+                                            <div class="block-stars" style="text-align: right;">
+
+                                                <h5 style="font-size:12px;font-weight:bold;background-color:#E3B71E;border-radius:3px;padding:3px;"> Điểm IMDb: @s.Rate</h5>
+
+
+
+                                                <div class="fa fa-eye" style="float:left;"> </div> <span style="float:right;">@s.Viewed</span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            }
+
+
+
+                            <div class="clearfix"> </div>
+                        </div>
+                        <!-- /latest-movies1 -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+    else
+    {
+        if (key == " " || key.Length < 1)
+        {
+            <div class="tittle-head">
+                <h4 class="latest-text">TÌM KIẾM</h4>
+                <div class="container">
+                    <div class="agileits-single-top">
+                        <ol class="breadcrumb">
+                            <li><a href="/">Trang chủ</a></li>
+                            <li class="active"><a href="#">Không tìm thấy kết quả với từ khoá "@key"</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {   
+            @*<div class="browse-agile-w3ls general-w3ls">
+            @using(Html.BeginForm("Index", "Movie", FormMethod.Get))
+            {
+                <div class="col-md-2 w3l-movie-gride-agile">
+                    <input type="text" name="searchString" />
+                </div>
+            }
+            </div>*@
+            result = new MovieDao().SearchByKey(key);
+            <div class="general-agileits-w3l">
+                <div class="w3l-medile-movies-grids">
+
+                    <!-- /movie-browse-agile -->
+
+                    <div class="movie-browse-agile">
+                        <!--/browse-agile-w3ls -->
+                        <div class="browse-agile-w3ls general-w3ls">
+                            <div class="tittle-head">
+                                <h4 class="latest-text">TÌM KIẾM</h4>
+                                <div class="container">
+                                    <div class="agileits-single-top">
+                                        <ol class="breadcrumb">
+                                            <li><a href="/">Trang chủ</a></li>
+                                            <li class="active"><a href="#">Kết quả tìm kiếm với từ khoá "@key"</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="browse-inner">
+                                    @foreach (var s in result)
+                                    {
+                                        <div class="col-md-2 w3l-movie-gride-agile">
+                                            <a href="/phim/@s.MovieID" class="hvr-shutter-out-horizontal">
+                                                <img src="@s.Image" title="album-name" alt="@s.Name" width="182" height="268" />
+                                                <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+                                            </a>
+                                            <div class="mid-1">
+                                                <div class="w3l-movie-text" style="display: flex;">
+                                                    <h4 style="flex:1;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">@s.Name</h4>
+                                                </div>
+                                                <div class="mid-2" style="display: flex; justify-content: space-between;">
+
+                                                    <div class="blog-grid" style="text-align:left;">
+                                                        <span>@s.Year</span>
+                                                        <br />
+                                                        <h5>
+                                                            @s.Time
+                                                        </h5>
+                                                    </div>
+                                                    <div class="block-stars" style="text-align: right;">
+
+                                                        <h5 style="font-size:12px;font-weight:bold;background-color:#E3B71E;border-radius:3px;padding:3px;"> Điểm IMDb: @s.Rate</h5>
+
+
+
+                                                        <div class="fa fa-eye" style="float:left;"> </div> <span style="float:right;">@s.Viewed</span>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    }
+
+
+
+                                    <div class="clearfix"> </div>
+                                </div>
+                                <!-- /latest-movies1 -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+}
+
+
+
+
